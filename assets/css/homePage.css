@@ -1,0 +1,113 @@
+.nav-bar-line{
+    border-bottom: 1px solid #0095ff;
+}
+.navbar-brand{
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.login-home-button {
+    --color: #0095ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 5px 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--color);
+   }
+   .login-home-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .login-home-button:hover {
+    color: #fff;
+   }
+   
+   .login-home-button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .login-home-button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .login-home-button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+   .start-now-button{
+        margin-left: 200px;
+   }
+/*  */
+.homePage-content{
+    display: flex;
+    width: 100vh;
+}
+.left-content{
+    backdrop-filter: blur(10px);
+}
+.homePage-content .left-content h1{
+    padding-left: 5px;
+    padding-top: 200px;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+}
+.homePage-content .left-content h3{
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.homePage-content .left-content p{
+    padding-left: 5px;
+    margin-bottom: 0rem;
+}
+.homePage-content .left-content button{
+    margin: 50px 20px;
+    margin-bottom: 73px;
+}
+.right-content{
+    width: 100%;
+    background-image: url('/assets/img/HomePage2.jpg');
+    background-repeat: repeat;
+    border-radius: 20px;
+}
+/*  */
+.footer{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg,#0095ff,white);
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    left: 0;
+    right: 0;
+}
+.footer i{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.maggin-i{
+    margin-left: 60px;
+}
